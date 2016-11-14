@@ -12,6 +12,14 @@ import org.springframework.stereotype.Component;
 public class SampleProperty {
 
   private String stringPropNotFound;
+  public String getStringPropNotFound() {
+    return stringPropNotFound;
+  }
+
+  public void setStringPropNotFound(String stringPropNotFound) {
+    this.stringPropNotFound = stringPropNotFound;
+  }
+
   private String stringProp1;
 
   @Value("${abc}")
